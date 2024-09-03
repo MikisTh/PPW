@@ -8,3 +8,9 @@ let food2 = {...foods, name: banana}
 
 let food3 = { food, name: maça}
 
+food4 = {} // objeto vazio
+
+let aluno = {matrícula, nome, cpf, idade}
+JSON.stringify(aluno)
+
+"mat =" +aluno.matrícula+",nome="+aluno.nome+",cpf:"+aluno.cpf+",idade="+aluno.idade+""
