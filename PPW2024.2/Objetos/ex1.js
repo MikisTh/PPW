@@ -8,18 +8,18 @@ function Aluno (nome, matricula, cpf) {
   this.cpf = cpf;
 }
 
-var aluno1 = new Aluno("Thiago", "000001",000.000.000-01);
+var aluno1 = new Aluno("Thiago", "000001","000.000.000-01");
 
 
 var Aluno = {
   tipo: "veterano", 
-  qualTipo: function () {
+  functionTipo: function () {
     console.log(this.tipo);
   },
 };
 
 var aluno = Object.create(aluno);
-aluno.qualTipo();
+aluno.functionTipo();
 var aluno = Object.create(aluno);
-aluno.tipo = "bolsita";
-aluno.qualTipo(); 
+aluno.functionTipo = "bolsita";
+aluno.functionTipo(); 
