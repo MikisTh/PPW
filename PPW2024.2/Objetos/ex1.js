@@ -1,4 +1,4 @@
-6aluno ["nome"] = "nome do aluno";
+aluno ["nome"] = "nome do aluno";
 aluno["matricula"] = "000000;
 aluno["cpf"] = 000.000.000-00;
 
