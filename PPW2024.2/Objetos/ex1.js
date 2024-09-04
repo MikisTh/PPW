@@ -18,8 +18,8 @@ var Aluno = {
   },
 };
 
-var aluno1 = Object.create(aluno);
-animal1.qualTipo();
+var aluno = Object.create(aluno);
+aluno.qualTipo();
 var aluno = Object.create(aluno);
 aluno.tipo = "bolsita";
 aluno.qualTipo(); 
