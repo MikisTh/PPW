@@ -1,4 +1,4 @@
-aluno ["nome"] = "nome do aluno";
+6aluno ["nome"] = "nome do aluno";
 aluno["matricula"] = "000000;
 aluno["cpf"] = 000.000.000-00;
 
@@ -23,3 +23,4 @@ aluno.functionTipo();
 var aluno = Object.create(aluno);
 aluno.functionTipo = "bolsita";
 aluno.functionTipo(); 
+})
