@@ -26,9 +26,15 @@ const handleBtAdicionarClick = () => {
     return;
   }
 
-  ++qtd;
-  somatorio += num;
-  const media = somatorio / qtd;
+function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }
+
+}
 
   inputMat.value = matrícula;
   inputNome.value = nome;
