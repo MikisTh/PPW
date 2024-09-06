@@ -7,16 +7,17 @@
     <link href="index.css" rel="stylesheet" media="all" />    
   </head>
   <body>
-    <h1>Lista de ALunos</h1>
-    <p>
-      Aluno: <input id="inputNum" type="number" />
-      <button id="btAdic">Adicionar Aluno</button>
-    </p>
-    <p>Matrícula: <input id="inputMatrícula" readonly value="0" /></p>
-    <p>Nome: <input id="inputNome" readonly value="0" /></p>
-    <p>Idade: <input id="inputIdade" readonly value="0" /></p>
-    <p>CPF: <input id="inputCpf" readonly value="0" /></p>
+    <h1>Lista de Alunos</h1>
+    <button type="submit" id="btAdic">Adicionar Aluno</button>
+    <form>
+      <label>Matrícula: <input id="inputMatrícula" placeholder="digite sua matrícula" readonly value="0" /></label>
+      <label>Nome: <input id="inputNome" placeholder="digite seu nome" readonly value="0" /></label>
+      <label>Idade: <input id="inputIdade" placeholder="digite sua idade" readonly value="0" /></label>
+      <label>CPF: <input id="inputCpf" placeholder="digite seu cpf" readonly value="0" /></label>
 
-    <p><button id="btLimpar">Limpar</button></p>
+        <p><button type="submit">Enviar</button></p>
+        <p><button id="btLimpar">Limpar</button></p>
+      </form>   
+ 
   </body>
 </html>
