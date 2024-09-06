@@ -30,6 +30,14 @@ const handleBtAdicionarClick = () => {
   inputCpf.value = cpf;
  };
 
+const handleBtSalvarClick = () => {
+  inputMat.value = matrícula;
+  inputNome.value = nome;
+  inputIdade.value = idade;
+  inputCpf.value = cpf;
+ };
+
+
 const handleBtLimparClick = (evt) => {
   console.log("evt.target", evt.target);
   inputMat.value = 0;
