@@ -1,11 +1,13 @@
 .button {
     border-color: antiquewhite;
+    background-color: red;
 }
 
 .input {
     border-color: aquamarine;
+    background-color: green;
 }
 
 .body {
-    background-color: azure;
+    background-color: blue;
 }
