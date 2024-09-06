@@ -13,35 +13,22 @@ const inputMat = document.getElementById("inputMat");
 const inputNome = document.getElementById("inputNome");
 const inputIdade = document.getElementById("inputIdade");
 const inputCpf = document.getElementById("inputCpf");
+const btSubmit = document.getElementById("btEnviar");
 const btLimpar = document.getElementById("btLimpar");
 
-let somatorio = 0;
-let qtd = 0;
-
 const handleBtAdicionarClick = () => {
-  let num = parseInt(inputNum.value);
-  if (isNaN(num)) {
+  let idade = parseInt(inputIdade.value);
+  if (isNaN(idade)) {
     alert("Digite um número inteiro!");
-    inputNum.focus();
+    inputIdade.focus();
     return;
   }
-
-function Enviar() {
-
-    var nome = document.getElementById("nomeid");
-
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
-
-}
 
   inputMat.value = matrícula;
   inputNome.value = nome;
   inputIdade.value = idade;
   inputCpf.value = cpf;
-  inputcpf.focus();
-};
+ };
 
 const handleBtLimparClick = (evt) => {
   console.log("evt.target", evt.target);
@@ -49,19 +36,15 @@ const handleBtLimparClick = (evt) => {
   inputNome.value = 0;
   inputIdade.value = 0;
   inputCpf.value = "";
-  inputCpf.focus();
-};
+  };
 
-// configuração de todos os eventos
-btAdic.onclick = handleBtAdicionarClick;
+btAdicionar.onclick = handleBtAdicionarClick;
+btSalvar.onclick = handleBtSalvarClick;
 btLimpar.onclick = handleBtLimparClick;
 
-// alert("Olá!");
-console.log("Mensagem impressa no console das ferramentas do desenvolvedor!");
-
-// console.log(alert("esse aqui é um alert!"));
-// console.log(confirm("esse aqui é um confirm"));
-// console.log(prompt("esse aqui é um prompt"));
+console.log(alert("Aluno adicionado com sucesso!"));
+console.log(confirm("Deseja adicionar aluno?"));
+console.log(prompt("Bem vindo!"));
 
 document.getElementById("titulo").innerHTML = "Alterando o título 1";
 
