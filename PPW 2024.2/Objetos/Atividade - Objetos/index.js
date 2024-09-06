@@ -65,22 +65,4 @@ console.log("Mensagem impressa no console das ferramentas do desenvolvedor!");
 
 document.getElementById("titulo").innerHTML = "Alterando o título 1";
 
-function submitForm() {
-            // Serializa os dados do formulário
-            var formData = $("#dynamicForm").serialize();
 
-            // Simula uma requisição AJAX (substitua isso pela sua lógica real)
-            $.ajax({
-                type: "POST",
-                url: "seu_script_php_para_processar_dados.php", // Substitua pelo caminho do seu script PHP
-                data: formData,
-                success: function(response) {
-                    console.log(response); // Exiba a resposta do servidor (para fins de depuração)
-                    alert("Formulário enviado com sucesso!"); // Exiba uma mensagem de sucesso
-                },
-                error: function(error) {
-                    console.error(error); // Exiba mensagens de erro (para fins de depuração)
-                    alert("Erro ao enviar o formulário. Verifique o console para mais detalhes.");
-                }
-            });
-        }
