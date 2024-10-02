@@ -18,7 +18,7 @@ const createList = (data) => {
   tarefas.forEach((tarefa) => {
     const text = document.createTextNode(`${tarefa.descricao} `);
     const li = document.createElement("li");
-    li.appendChild(text);
+    li.appendChild(text); // O método acrescenta um nó (elemento) como o último filho de um elemento. appendChild()
     const cb = document.createElement("input");
     cb.type = "checkbox";
     cb.checked = tarefa.concluida;
